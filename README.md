@@ -14,8 +14,7 @@ The PhonePe Pulse GitHub repository contains extensive data related to various m
 2. Transform the data into a suitable format and perform necessary cleaning and pre-processing.
 3. Store the transformed data in a MySQL database for efficient retrieval.
 4. Develop a live geo-visualization dashboard using Streamlit and Plotly in Python.
-5. Retrieve data from the MySQL database to display on the dashboard.
-6. Provide at least 10 different dropdown options for users to explore various facts and figures on the dashboard.
+5. Provide at least 10 different dropdown options for users to explore various facts and figures on the dashboard.
 
 ## Solution Approach
 
@@ -40,12 +39,7 @@ The PhonePe Pulse GitHub repository contains extensive data related to various m
 - Use Plotly's geo map functions to display data on a map.
 - Incorporate multiple dropdown options in Streamlit for users to select different facts and figures to display.
 
-### Step 5: Data Retrieval
-
-- Connect to the MySQL database using the `mysql-connector-python` library.
-- Fetch data into a Pandas DataFrame and update the dashboard dynamically.
-
-### Step 6: Deployment
+### Step 5: Deployment
 
 - Ensure the solution is secure, efficient, and user-friendly.
 - Thoroughly test the solution and deploy the dashboard publicly for user access.
@@ -63,15 +57,10 @@ The final deliverable will be a live geo-visualization dashboard that:
 ```plaintext
 .
 ├── data
-│   ├── raw
-│   ├── processed
-│   └── transformed
+│   ├── processed & transformed
 ├── scripts
-│   ├── data_extraction.py
-│   ├── data_transformation.py
-│   ├── db_insertion.py
-│   ├── data_retrieval.py
-│   └── dashboard.py
+│   ├── phonepe_app.py
+│   ├── phonepe_data_extraction.ipynb
 ├── requirements.txt
 ├── README.md
 └── LICENSE
@@ -81,7 +70,7 @@ The final deliverable will be a live geo-visualization dashboard that:
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.12+
 - MySQL Database
 - Git
 
@@ -105,24 +94,9 @@ The final deliverable will be a live geo-visualization dashboard that:
 
 ### Running the Scripts
 
-1. **Data Extraction:**
-   ```sh
-   python scripts/data_extraction.py
-   ```
-
-2. **Data Transformation:**
-   ```sh
-   python scripts/data_transformation.py
-   ```
-
-3. **Database Insertion:**
-   ```sh
-   python scripts/db_insertion.py
-   ```
-
 4. **Run the Dashboard:**
    ```sh
-   streamlit run scripts/dashboard.py
+   streamlit run phonepe_app.py
    ```
 
 ## Usage
