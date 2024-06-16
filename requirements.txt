@@ -1,0 +1,8 @@
+pandas
+numpy
+plotly
+mysql-connector-python
+mysql-connector
+streamlit
+streamlit_option_menu
+json
